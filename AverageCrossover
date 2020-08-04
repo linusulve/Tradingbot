@@ -10,13 +10,13 @@ namespace NinjaTrader.NinjaScript.Strategies
 		{
 			if (State == State.SetDefaults)
 			{
-				Description									  = @"This strategy will trade when the 5 moving average crosses the 20 moving average";
-				Name										      = "SimpleMovingAverageCrossover";
-				Calculate									    = Calculate.OnBarClose;
+				Description		= @"This strategy will trade when the 5 moving average crosses the 20 moving average";
+				Name			= "AverageCrossover";
+				Calculate	        = Calculate.OnBarClose;
 				EntriesPerDirection						= 1;
-				EntryHandling								  = EntryHandling.AllEntries;
-				IsExitOnSessionCloseStrategy	= true;
-				ExitOnSessionCloseSeconds			= 30;
+				EntryHandling						        = EntryHandling.AllEntries;
+				IsExitOnSessionCloseStrategy	                                = true;
+				ExitOnSessionCloseSeconds			                = 30;
 				IsFillLimitOnTouch						= false;
 				MaximumBarsLookBack						= MaximumBarsLookBack.TwoHundredFiftySix;
 				OrderFillResolution					  = OrderFillResolution.Standard;
