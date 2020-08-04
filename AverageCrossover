@@ -56,11 +56,13 @@ namespace NinjaTrader.NinjaScript.Strategies
 
 		protected override void OnBarUpdate()
 		{
-			if (BarsInProgress != 0)
-				return; 
+			if( CurrentAbove < BarsRequiredToTrade)
+			return;
 			
 			if (CrossAbove(fastSMA, slowSMA, 1))
-				EnterLong();
+		         EnterLong();
+			else if (CrossBelow(fastSMA, slowSMA 1))
+			 EnterShort();
 			
 		}
 		
