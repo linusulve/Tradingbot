@@ -37,7 +37,7 @@ namespace NinjaTrader.NinjaScript.Strategies
 			 if (State == State.Configure)
 			{
 			Print("Here");
-				//När vi är i en levande position, så har vi 100$ tagning delvinst. 
+				//När vi är i en levande position, så har vi 100$ delvinst 
 				SetProfitTarget(CalculationMode.Currency, 100);
 				
 				//Stoppar vid förlust av 50$
